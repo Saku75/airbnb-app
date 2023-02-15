@@ -1,0 +1,14 @@
+.card-list {
+	width: 100%;
+	max-width: 1200px;
+
+	margin: 0 auto;
+	padding: 1rem;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-auto-rows: 1fr;
+	grid-gap: 1rem;
+
+	list-style: none;
+}
