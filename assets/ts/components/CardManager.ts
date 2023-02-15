@@ -216,9 +216,11 @@ class CardManager {
 		// Success variable
 		let success = false;
 
+		// Check if there is an internet connection
+		await this.checkInternetConnection();
+
 		// Try to fetch the card data from the API until it is successful
 		while (!success) {
-			// Wait for 1 second
 			try {
 				// Fetch the card data from the API
 				const response = await fetch(
